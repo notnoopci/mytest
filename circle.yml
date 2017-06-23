@@ -1,0 +1,10 @@
+version: 2.0
+jobs:
+  build:
+    docker:
+    - image: alpine
+    working_directory: /tmp
+    parallelism: 3
+    steps:
+    - run: echo hi; sleep 10; echo done
+
